@@ -53,7 +53,7 @@ const mongoose = require('mongoose')
 // });
 
 
-mongoose.connect('mongodb+srv://iftikharafridi2024:1234@cluster0.kzzrnyo.mongodb.net/gift_store?retryWrites=true&w=majority').then(()=>{
+mongoose.connect(`mongodb+srv://iftikharafridi2024:1234@cluster0.kzzrnyo.mongodb.net/gift_store?retryWrites=true&w=majority`).then(()=>{
    console.log('Connection successful')
 });
 
