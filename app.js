@@ -47,8 +47,13 @@ const mongoose = require('mongoose')
 //    console.log('Connection successful')
 // });
 //let mongodb_uri = process.env.MONGODB_URI_LOCAL
-let mongodb_uri = process.env.MONGODB_URI_ATLAS
-mongoose.connect(mongodb_uri).then(()=>{
+// let mongodb_uri = process.env.MONGODB_URI_ATLAS
+// mongoose.connect(mongodb_uri).then(()=>{
+//    console.log('Connection successful')
+// });
+
+
+mongoose.connect('mongodb+srv://iftikharafridi2024:1234@cluster0.kzzrnyo.mongodb.net/gift_store?retryWrites=true&w=majority').then(()=>{
    console.log('Connection successful')
 });
 
