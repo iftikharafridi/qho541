@@ -239,13 +239,20 @@ app.get('*', notFoundController)
 //   res.render('notfound')
 // })
 
-// const port = 4000;
+ const port = 10000;
 // const hostname = '127.0.0.1';
 
-const port = process.env.PORT;
+//const port = process.env.PORT;
 const hostname = process.env.HOSTNAME;
 
-app.listen(port, hostname, () => {
+// app.listen(process.env.PORT || port, hostname, () => {
+//     console.log(`Server ${hostname} is running on port number ${port}`);
+//     console.log(`Server Url = https://${hostname}:${port}`);
+// });
+
+app.listen(process.env.PORT || port, () => {
     console.log(`Server ${hostname} is running on port number ${port}`);
     console.log(`Server Url = https://${hostname}:${port}`);
 });
+
+// Some points while deploying on Render or Cyclic
